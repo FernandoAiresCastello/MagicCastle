@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+
+    <div class="message-log">
+      <div *ngFor="let msg of messageLog.messages" [ngClass]="msg.type">
+        <pre>{{msg.text}}</pre>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <form (submit)="sendCommand()">
+        <ion-input class="command-input" [(ngModel)]="command" placeholder="Enter command" name="command">
+        </ion-input>
+        <div class="command-input-button-spacer"></div>
+        <ion-button type="submit" class="send-button" shape="round">
+          <ion-icon name="send" slot="icon-only"></ion-icon>
+        </ion-button>
+      </form>
+    </div>
+
+  </div>
+</ion-content>

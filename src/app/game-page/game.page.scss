@@ -1,0 +1,64 @@
+@import "../../theme/variables.scss";
+
+.content {
+    min-height: 100%;
+    padding-bottom: 50vh;
+    background: #acf;
+}
+
+.message-log {
+    padding: 15px;
+    min-height: 100%;
+    background: #fff;
+}
+
+.input-area form {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #cdf;
+    border-width: 1px 0 0 0;
+    background-image: linear-gradient(#fff, #acf)
+}
+
+.command-input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #1860ff;
+    background-image: linear-gradient(#fff, #bdf)
+}
+
+.command-input-button-spacer {
+    width: 10px;
+}
+
+.send-button {
+    margin: 0;
+}
+
+pre {
+    margin: 0;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.incoming,
+.outgoing {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 0px #000;
+}
+
+.incoming {
+    margin-right: 50px;
+    border-color: #acf;
+    background-image: linear-gradient(#cef, #acf)
+}
+
+.outgoing {
+    margin-left: 50px;
+    border-color: #dc8;
+    background-image: linear-gradient(#ffc, #dc8)
+}
