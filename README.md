@@ -1,4 +1,4 @@
-# Magic Castle
-#### Text-based game for Android
+# Android Sample
+#### Sample text-based game for Android (built with Ionic)
 
-This is a text-based game for Android mobile devices.
+This is a sample of a text-based game for Android mobile devices.
