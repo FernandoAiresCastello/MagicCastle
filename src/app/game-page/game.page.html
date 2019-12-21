@@ -20,7 +20,7 @@
 
     <div class="input-area">
       <form (submit)="sendCommand()">
-        <ion-input class="command-input" [(ngModel)]="command" placeholder="Enter command" name="command">
+        <ion-input class="command-input" [(ngModel)]="command" [readonly]="blockInput" placeholder="Enter command" name="command">
         </ion-input>
         <div class="command-input-button-spacer"></div>
         <ion-button type="submit" class="send-button" shape="round">
